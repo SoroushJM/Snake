@@ -12,9 +12,18 @@ public class SnakeGame
 
         SnakeObj snake1 = new SnakeObj(5,5,SnakeObj.Directions.right);
 
-        List<SnakeObj> SnakeObjs= new  List<SnakeObj> { snake1};
+        List<SnakeObj> snakeObjs= new  List<SnakeObj> { snake1};
 
-        GameMap = new GameMap(SnakeObjs,new MapSize());
+        var jsonStr = string.Join(' ', File.ReadAllLines("C:\\Users\\Paratech\\source\\repos\\Snake\\Snake\\10X10Map.json"));
+
+        var cells = Newtonsoft.Json.JsonConvert.DeserializeObject<List<List<Cell>>>(jsonStr)!;
+
+        var gameMap = new GameMap(cells, snakeObjs);
+        GameMap = gameMap;
+
+        ConsolePrinter consolePrinter = new ConsolePrinter(gameMap, snakeObjs);
+
+        
 
 
 
@@ -25,6 +34,7 @@ public class SnakeGame
 
         }
     }
+
 
     
 }

@@ -17,9 +17,25 @@ public class GameMap
     private int NumberOfSnakes { get; } // total number of snakes
     private List <SnakeObj> SnakeObjs { get; }
 
-    List<List<Cell>> Map { get; }
+    public List<List<Cell>> Map { get; }
 
     MapSize MapSize { get; }
+
+    public GameMap(List<List<Cell>> map, List<SnakeObj> snakeObjs)
+    {
+        SnakeObjs = snakeObjs;
+        Map = map;
+        foreach (var row in map)
+        {
+            foreach (var cell in row)
+            {
+                foreach (var snakeobj in snakeObjs)
+                {
+                    cell.SnakesValues.Add(new SnakeValues {  })
+                }
+            }
+        }
+    }
 
 
 
@@ -70,11 +86,15 @@ public class GameMap
 /// A list of Snakes that will exist in this cell
 /// with thier value
 /// </summary>
-internal class Cell
+public class Cell
 {
-    bool IsWall = false;
+    public bool IsWall = false;
     private int NumberOfSnakes { get; } // total number of snakes
-    List<SnakeValues> SnakesValues ;
+    public List<SnakeValues> SnakesValues;
+    public Cell() 
+    {
+        SnakesValues = new List<SnakeValues>();
+    }
     public Cell(List<SnakeObj> snakeObjs)
     {
         NumberOfSnakes = snakeObjs.Count;
@@ -90,9 +110,8 @@ internal class Cell
 /// <summary>
 /// snake and its value
 /// </summary>
-internal struct SnakeValues
-{
-
+public struct SnakeValues
+{ 
     public SnakeObj snakeObj;
     public int snakeVlaue;
 }
