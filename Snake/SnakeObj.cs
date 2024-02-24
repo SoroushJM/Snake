@@ -12,8 +12,10 @@ public class SnakeObj
     {
         HeadX = x;
         HeadY = y;
-        Direction = direction;
     }
+
+    public SnakeObj(int x, int y) : this(x, y, Directions.right) { }
+
     public int HeadX;
     public int HeadY;
     public Directions Direction;

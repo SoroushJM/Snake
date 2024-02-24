@@ -79,7 +79,7 @@ public class ConsolePrinter
             throw new NotImplementedException("for now the game only supports only 2 snakes");
 
         else
-        if (cell.SnakesValues[0].snakeVlaue == 0)
+        if (cell.SnakesValues[0]._SnakeValue == 0)
         {
             var saveConsoleColor = new SaveConsoleColor();
             Console.BackgroundColor = EmptyCellBackgroundColor;
@@ -91,7 +91,7 @@ public class ConsolePrinter
             return;
         }
 
-        else if (cell.SnakesValues[0].snakeVlaue > 0)
+        else if (cell.SnakesValues[0]._SnakeValue > 0)
         {
             var saveConsoleColor = new SaveConsoleColor();
 
@@ -104,7 +104,7 @@ public class ConsolePrinter
             return;
         }
         else if (cell.SnakesValues.Count>1 &&
-                 cell.SnakesValues[1].snakeVlaue > 1)
+                 cell.SnakesValues[1]._SnakeValue > 1)
         {
             var saveConsoleColor = new SaveConsoleColor();
 
@@ -123,7 +123,7 @@ public class ConsolePrinter
 
     public void Draw()
     {
-        foreach (var row in Map.Map)
+        foreach (var row in Map._Map)
         {
             foreach (Cell cell in row) // this will iterate over all cells in row
             {

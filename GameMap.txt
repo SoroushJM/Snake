@@ -1,0 +1,2042 @@
+[
+  [
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    }
+  ],
+  [
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    }
+  ],
+  [
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    }
+  ],
+  [
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    }
+  ],
+  [
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    }
+  ],
+  [
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    }
+  ],
+  [
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    }
+  ],
+  [
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    }
+  ],
+  [
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    }
+  ],
+  [
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    }
+  ],
+  [
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    }
+  ],
+  [
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    }
+  ],
+  [
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    }
+  ],
+  [
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    }
+  ],
+  [
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    }
+  ],
+  [
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    }
+  ],
+  [
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    }
+  ],
+  [
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    }
+  ],
+  [
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": false,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    }
+  ],
+  [
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    },
+    {
+      "IsWall": true,
+      "SnakesValues": [
+      ]
+    }
+  ]
+]

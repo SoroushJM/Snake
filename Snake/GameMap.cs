@@ -17,38 +17,48 @@ public class GameMap
     private int NumberOfSnakes { get; } // total number of snakes
     private List <SnakeObj> SnakeObjs { get; }
 
-    public List<List<Cell>> Map { get; }
+    public List<List<Cell>> _Map { get; }
 
     MapSize MapSize { get; }
 
     public GameMap(List<List<Cell>> map, List<SnakeObj> snakeObjs)
     {
         SnakeObjs = snakeObjs;
-        Map = map;
+        _Map = map;
         foreach (var row in map)
         {
             foreach (var cell in row)
             {
                 foreach (var snakeobj in snakeObjs)
                 {
-                    cell.SnakesValues.Add(new SnakeValues {  })
+                    cell.SnakesValues.Add(new SnakeValues(snakeobj,0));
                 }
             }
         }
+
+        InitalSnakes(snakeObjs);
+
     }
 
 
-
-    public GameMap(List<SnakeObj> snakeObjs, MapSize mapSize)
+    /// <summary>
+    /// this contructor will create map for given size
+    /// you doesnt need to provide snake object
+    /// </summary>
+    /// <param name="snakeObjs"></param>
+    /// <param name="mapSize">size will exclist here</param>
+    public GameMap(MapSize mapSize ,List<SnakeObj>? snakeObjs=null )
     {
+        snakeObjs ??= [];
+
         NumberOfSnakes = snakeObjs.Count;
         SnakeObjs = snakeObjs;
         MapSize = mapSize;
-        Map = new List<List<Cell>> { };
+        _Map = new List<List<Cell>> { };
 
         for (int i = 0; i < mapSize.coulmn; i++)
         {
-            Map.Add(new List<Cell>());
+            _Map.Add(new List<Cell>());
         }
 
         for (int i = 0; i < mapSize.coulmn; i++)
@@ -56,29 +66,32 @@ public class GameMap
             for (int j = 0; j < mapSize.row; j++)
             {
                 var cell = new Cell(snakeObjs);
-                Map[i].Add(cell);
+                _Map[i].Add(cell);
             }
         }
 
     }
     /// <summary>
-    /// 
+    /// will place snakes on the map
     /// </summary>
-    /// <param name="rank">demestion rank-starts with 1</param>
-    /// <returns>number of lenght in specifed ransk</returns>
- 
-    public int GetLength(int rank)
+    public void InitalSnakes(List<SnakeObj> snakeObjs)
     {
-        if (rank == 1)
+        foreach (var snake in snakeObjs)
         {
-            return MapSize.coulmn;
+            var x = snake.HeadX;
+            var y = snake.HeadY;
+
+            var listOfSnakeValu = _Map[x][y].SnakesValues;
+            for (int i = 0; i < listOfSnakeValu.Count; i++)
+            {
+                if (listOfSnakeValu[i]._SnakeObj == snake)
+                {
+                    listOfSnakeValu[i]._SnakeValue = 1;
+                }
+            }
         }
-        if (rank ==2)
-        {
-            return MapSize.row;
-        }
-        throw new Exception($"this {rank} you provided is not valid");
     }
+
 
 
 }
@@ -89,7 +102,6 @@ public class GameMap
 public class Cell
 {
     public bool IsWall = false;
-    private int NumberOfSnakes { get; } // total number of snakes
     public List<SnakeValues> SnakesValues;
     public Cell() 
     {
@@ -97,21 +109,25 @@ public class Cell
     }
     public Cell(List<SnakeObj> snakeObjs)
     {
-        NumberOfSnakes = snakeObjs.Count;
         SnakesValues = new() { };
         foreach (var snake in snakeObjs)
         {
-            SnakesValues.Add(new SnakeValues { snakeObj = snake, snakeVlaue = 0 });
+            SnakesValues.Add(new SnakeValues (snake,  0 ));
         }
     }
 
 }
 
 /// <summary>
-/// snake and its value
+/// snake object itself and its value in that cell
 /// </summary>
-public struct SnakeValues
-{ 
-    public SnakeObj snakeObj;
-    public int snakeVlaue;
+public class SnakeValues
+{
+    public SnakeValues(SnakeObj? snakeObj,int? snakeValue)
+    {
+        _SnakeValue = snakeValue?? 0;
+        _SnakeObj = snakeObj;
+    }
+    public SnakeObj _SnakeObj { get; set; }
+    public int _SnakeValue { get; set; }
 }

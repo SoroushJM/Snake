@@ -3,7 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snake", "Snake\Snake.csproj", "{E8A504FE-06D3-4B2B-843E-748DDDB8F3A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Snake", "Snake\Snake.csproj", "{E8A504FE-06D3-4B2B-843E-748DDDB8F3A5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapMakerForSnakeGame", "MapMakerForSnakeGame\MapMakerForSnakeGame.csproj", "{EB9F23AB-09FD-4491-B63E-53C2EFAAD959}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{287A4110-4C65-48D2-9610-1A566B4303E5}"
+	ProjectSection(SolutionItems) = preProject
+		GameMap.txt = GameMap.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +22,10 @@ Global
 		{E8A504FE-06D3-4B2B-843E-748DDDB8F3A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8A504FE-06D3-4B2B-843E-748DDDB8F3A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8A504FE-06D3-4B2B-843E-748DDDB8F3A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB9F23AB-09FD-4491-B63E-53C2EFAAD959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB9F23AB-09FD-4491-B63E-53C2EFAAD959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB9F23AB-09FD-4491-B63E-53C2EFAAD959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB9F23AB-09FD-4491-B63E-53C2EFAAD959}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
