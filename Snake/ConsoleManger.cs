@@ -22,10 +22,11 @@ public class ConsoleManger : ConsolePrinter
 
         while (true)
         {
-            var keyPressed = Console.ReadKey().Key;
+            var keyPressed = Console.ReadKey(true).Key;
             switch (keyPressed)
             {
                 case ConsoleKey.W:
+
                     On_KeyPress_W?.Invoke(this, EventArgs.Empty);
                     break;
                 case ConsoleKey.S:

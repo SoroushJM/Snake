@@ -8,7 +8,7 @@ public class SnakeGame
     public static void Main()
     {
 
-        SnakeObj snake1 = new SnakeObj(5, 5, SnakeObj.Directions.up);
+        SnakeObj snake1 = new SnakeObj(5, 5, SnakeObj.Directions.right);
 
         List<SnakeObj> snakeObjs= new  List<SnakeObj> { snake1};
 

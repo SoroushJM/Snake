@@ -123,6 +123,7 @@ public class ConsolePrinter
 
     public void Draw()
     {
+        Console.Clear();
         foreach (var row in Map._Map)
         {
             foreach (Cell cell in row) // this will iterate over all cells in row

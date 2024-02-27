@@ -14,12 +14,14 @@ namespace Snake;
 /// </summary>
 public class GameMap
 {
-    private int NumberOfSnakes { get; } // total number of snakes
+    
     private List <SnakeObj> SnakeObjs { get; }
 
     public List<List<Cell>> _Map { get; }
 
     MapSize MapSize { get; }
+
+    public int AppelCount { get; set; }
 
     public GameMap(List<List<Cell>> map, List<SnakeObj> snakeObjs)
     {
@@ -51,7 +53,6 @@ public class GameMap
     {
         snakeObjs ??= [];
 
-        NumberOfSnakes = snakeObjs.Count;
         SnakeObjs = snakeObjs;
         MapSize = mapSize;
         _Map = new List<List<Cell>> { };
@@ -103,9 +104,17 @@ public class Cell
 {
     public bool IsWall = false;
     public List<SnakeValues> SnakesValues;
+
+    /// <summary>
+    /// true if this cell have appel on it
+    /// </summary>
+    public bool HaveAppel { get; set; }
+
+
     public Cell() 
     {
         SnakesValues = new List<SnakeValues>();
+        HaveAppel = false;
     }
     public Cell(List<SnakeObj> snakeObjs)
     {
@@ -114,8 +123,20 @@ public class Cell
         {
             SnakesValues.Add(new SnakeValues (snake,  0 ));
         }
+        HaveAppel = false;
     }
 
+    public SnakeValues? GetSnakeValues(SnakeObj snakeRef )
+    {
+        foreach (var snakeValue in SnakesValues)
+        {
+            if (snakeValue._SnakeObj == snakeRef)
+            {
+                return snakeValue;
+            }
+        }
+        return null;
+    }
 }
 
 /// <summary>
