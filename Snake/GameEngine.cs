@@ -175,7 +175,7 @@ public class GameEngine
                 y = random.Next(_Map[0].Count);
 
             }
-            while (CheckIfSnakeExistInThisCell(x,y));
+            while (!IsValidPlace4Appel(x,y));
 
             _Map[x][y].HaveAppel = true;
 
@@ -188,16 +188,20 @@ public class GameEngine
     /// <param name="x"></param>
     /// <param name="y"></param>
     /// <returns>returns true if snake exist in that cell</returns>
-    public bool CheckIfSnakeExistInThisCell(int x, int y)
+    public bool IsValidPlace4Appel(int x, int y)
     {
         foreach (var snakeVal in _Map[x][y].SnakesValues)
         {
             if (snakeVal._SnakeValue > 0)
             {
-                return true;
+                return false;
+            }
+            if (_Map[x][y].IsWall)
+            {
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
     public void UpdateSnakesWhoEatAppel()
@@ -211,7 +215,15 @@ public class GameEngine
             {
                 _Map[headX][headY].HaveAppel = false;
                 _GameMap.AppelCount--;
+
+                var cell = _Map[headX][headY];
+
+                SnakeValues x = cell.SnakesValues.Find(x => x._SnakeObj == snake)!;
+
+                x._SnakeValue++;
+
             }
+
         }
     }
 

@@ -12,7 +12,8 @@ public class SnakeGame
 
         List<SnakeObj> snakeObjs= new  List<SnakeObj> { snake1};
 
-        var jsonStr = string.Join(' ', File.ReadAllLines("C:\\Users\\Paratech\\source\\repos\\Snake\\GameMap.txt"));
+        var jsonStr = string.Join(' ', File.ReadAllLines(
+            "C:\\Users\\sorou\\Source\\Repos\\Snake\\Snake\\GameMap.json"));
 
         var cells = Newtonsoft.Json.JsonConvert.DeserializeObject<List<List<Cell>>>(jsonStr)!;
 
