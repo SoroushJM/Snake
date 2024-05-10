@@ -13,47 +13,33 @@ public class ConsolePrinter
 {
     GameMap Map;
     List<SnakeObj> SnakeObjs;
+    StringBuilder DisplayMapStr;
+
     public ConsolePrinter(GameMap map, List<SnakeObj> snakeObjs)
     {
         Map = map;
         SnakeObjs = snakeObjs;
-        int numberOfCharWeNeed = map._Map.Count * map._Map.First().Count * 13;
+        int numberOfCharWeNeed = map._Map.Count * map._Map.First().Count * 13 * 2;
         var displayMap = new StringBuilder(numberOfCharWeNeed);
+        DisplayMapStr = displayMap;
     }
     /// <summary>
     ///  On Creation it will saved foregroundColor and backgroundColor of console
     /// </summary>
-    public struct SaveConsoleColor
-    {
-        public SaveConsoleColor()
-        {
-            foregroundColor = Console.ForegroundColor;
-            backgroundColor = Console.BackgroundColor;
-        }
-        public ConsoleColor foregroundColor;
-        public ConsoleColor backgroundColor;
-    }
+   
 
-    public ConsoleColor WallColorForegroundColor = ConsoleColor.White;
-    public ConsoleColor WallColorBackgroundColor = ConsoleColor.White;
+    public string WallColorForegroundColor = "\u001b[38;5;231m";
+    public string WallColorBackgroundColor = "\u001b[48;5;231m";
 
-    public ConsoleColor Snake1Color = ConsoleColor.DarkGreen;
-    public ConsoleColor Snake2Color = ConsoleColor.DarkBlue;
+    public string Snake1Color = "\u001b[38;5;28m\u001b[48;5;28m";
+    public string Snake2Color = "\u001b[38;5;21m";
 
-    public ConsoleColor EmptyCellBackgroundColor = ConsoleColor.Black;
-    public ConsoleColor EmptyCellForegroundColor = ConsoleColor.Black;
+    public string EmptyCellBackgroundColor = "\u001b[48;5;0m";
+    public string EmptyCellForegroundColor = "\u001b[38;5;0m";
 
-    public ConsoleColor AppelColorForeGround = ConsoleColor.Red;
-    public ConsoleColor AppelColorBackGround = ConsoleColor.Red;
+    public string AppelColorForeGround = "\u001b[48;5;125m";
+    public string AppelColorBackGround = "\u001b[38;5;125m";
 
-
-
-
-    public void LoadSavedConsoleState(SaveConsoleColor savedConsoleColor)
-    {
-        Console.BackgroundColor = savedConsoleColor.backgroundColor;
-        Console.ForegroundColor = savedConsoleColor.foregroundColor;
-    }
 
 
 
@@ -61,13 +47,10 @@ public class ConsolePrinter
     public void DrawWall()
     {
 
-        var saveConsoleStated = new SaveConsoleColor();
+        DisplayMapStr.Append(WallColorForegroundColor);
+        DisplayMapStr.Append(WallColorBackgroundColor);
+        DisplayMapStr.Append("W");
 
-        Console.ForegroundColor = WallColorForegroundColor;
-        Console.BackgroundColor = WallColorBackgroundColor;
-        Console.Write("W");
-
-        LoadSavedConsoleState(saveConsoleStated);
     }
 
     public void DrawSnakes(Cell cell)
@@ -79,39 +62,34 @@ public class ConsolePrinter
         else
         if (cell.SnakesValues[0]._SnakeValue == 0)
         {
-            var saveConsoleColor = new SaveConsoleColor();
-            Console.BackgroundColor = EmptyCellBackgroundColor;
-            Console.ForegroundColor = EmptyCellForegroundColor;
+            
+            DisplayMapStr.Append(EmptyCellBackgroundColor);
+            DisplayMapStr.Append(EmptyCellForegroundColor);
 
-            Console.Write("e");
+            DisplayMapStr.Append("e");
 
-            LoadSavedConsoleState(saveConsoleColor);
             return;
         }
 
         else if (cell.SnakesValues[0]._SnakeValue > 0)
         {
-            var saveConsoleColor = new SaveConsoleColor();
 
-            Console.ForegroundColor = Snake1Color;
-            Console.BackgroundColor = Snake1Color;
+            DisplayMapStr.Append(Snake1Color);
+            DisplayMapStr.Append(Snake1Color);
 
-            Console.Write('1');
+            DisplayMapStr.Append('1');
 
-            LoadSavedConsoleState(saveConsoleColor);
             return;
         }
         else if (cell.SnakesValues.Count > 1 &&
                  cell.SnakesValues[1]._SnakeValue > 1)
         {
-            var saveConsoleColor = new SaveConsoleColor();
 
-            Console.ForegroundColor = Snake2Color;
-            Console.ForegroundColor = Snake2Color;
+            DisplayMapStr.Append(Snake2Color);
+            DisplayMapStr.Append(Snake2Color);
 
-            Console.Write('2');
+            DisplayMapStr.Append('2');
 
-            LoadSavedConsoleState(saveConsoleColor);
             return;
         }
 
@@ -121,12 +99,10 @@ public class ConsolePrinter
 
     public void DrawAppel()
     {
-        SaveConsoleColor saveConsoleColor = new SaveConsoleColor();
 
-        Console.BackgroundColor = AppelColorBackGround;
-        Console.ForegroundColor = AppelColorForeGround;
-        Console.Write("A");
-        LoadSavedConsoleState(saveConsoleColor);
+        DisplayMapStr.Append(AppelColorBackGround);
+        DisplayMapStr.Append(AppelColorForeGround);
+        DisplayMapStr.Append("A");
 
     }
 
@@ -142,12 +118,13 @@ public class ConsolePrinter
 
     public void DrawEmptyCell(Cell cell)
     {
-        //var saveConsoleState = new SaveConsoleColor();
-        Console.Write("e");
-        //LoadSavedConsoleState(saveConsoleState);
+        DisplayMapStr.Append(EmptyCellBackgroundColor);
+        DisplayMapStr.Append(EmptyCellForegroundColor);
+        DisplayMapStr.Append("e");
     }
     public void Draw()
     {
+        DisplayMapStr.Clear();
         Console.Clear();
         foreach (var row in Map._Map)
         {
@@ -176,7 +153,8 @@ public class ConsolePrinter
                 }
 
             }
-            Console.WriteLine();
+            DisplayMapStr.Append("\n\u001b[38;5;0m\u001b[48;5;0m");
         }
+        Console.WriteLine(DisplayMapStr);
     }
 }
