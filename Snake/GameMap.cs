@@ -33,7 +33,7 @@ public class GameMap
             {
                 foreach (var snakeobj in snakeObjs)
                 {
-                    cell.SnakesValues.Add(new SnakeValues(snakeobj,0));
+                    cell.SnakesValues.Add(new SnakeBodyNumber(snakeobj,0));
                 }
             }
         }
@@ -85,9 +85,9 @@ public class GameMap
             var listOfSnakeValu = _Map[x][y].SnakesValues;
             for (int i = 0; i < listOfSnakeValu.Count; i++)
             {
-                if (listOfSnakeValu[i]._SnakeObj == snake)
+                if (listOfSnakeValu[i]._SnakeRef == snake)
                 {
-                    listOfSnakeValu[i]._SnakeValue = 1;
+                    listOfSnakeValu[i]._SnakeBodyValue = 1;
                 }
             }
         }
@@ -103,7 +103,7 @@ public class GameMap
 public class Cell
 {
     public bool IsWall = false;
-    public List<SnakeValues> SnakesValues;
+    public List<SnakeBodyNumber> SnakesValues;
 
     /// <summary>
     /// true if this cell have appel on it
@@ -113,7 +113,7 @@ public class Cell
 
     public Cell() 
     {
-        SnakesValues = new List<SnakeValues>();
+        SnakesValues = new List<SnakeBodyNumber>();
         HaveAppel = false;
     }
     public Cell(List<SnakeObj> snakeObjs)
@@ -121,16 +121,16 @@ public class Cell
         SnakesValues = new() { };
         foreach (var snake in snakeObjs)
         {
-            SnakesValues.Add(new SnakeValues (snake,  0 ));
+            SnakesValues.Add(new SnakeBodyNumber (snake,  0 ));
         }
         HaveAppel = false;
     }
 
-    public SnakeValues? GetSnakeValues(SnakeObj snakeRef )
+    public SnakeBodyNumber? GetSnakeValues(SnakeObj snakeRef )
     {
         foreach (var snakeValue in SnakesValues)
         {
-            if (snakeValue._SnakeObj == snakeRef)
+            if (snakeValue._SnakeRef == snakeRef)
             {
                 return snakeValue;
             }
@@ -142,13 +142,13 @@ public class Cell
 /// <summary>
 /// snake object itself and its value in that cell
 /// </summary>
-public class SnakeValues
+public class SnakeBodyNumber
 {
-    public SnakeValues(SnakeObj? snakeObj,int? snakeValue)
+    public SnakeObj _SnakeRef { get; set; }
+    public int _SnakeBodyValue { get; set; }
+    public SnakeBodyNumber(SnakeObj snakeRef,int? snakeBodyValue)
     {
-        _SnakeValue = snakeValue?? 0;
-        _SnakeObj = snakeObj;
+        _SnakeBodyValue = snakeBodyValue?? 0;
+        _SnakeRef = snakeRef;
     }
-    public SnakeObj _SnakeObj { get; set; }
-    public int _SnakeValue { get; set; }
 }

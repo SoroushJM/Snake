@@ -7,38 +7,33 @@ using System.Threading.Tasks;
 namespace Snake;
 
 /// <summary>
-/// can print mutiple snake into console
+/// can print multiple snake into console
 /// </summary>
 public class ConsolePrinter
 {
     GameMap Map;
     List<SnakeObj> SnakeObjs;
-    StringBuilder DisplayMapStr;
+    List<string> FinalStr2Print = new();
+    const string NewLine_BlackBackGround_BlackForegrand = "\n\u001b[38;5;0m\u001b[48;5;0m";
 
     public ConsolePrinter(GameMap map, List<SnakeObj> snakeObjs)
     {
         Map = map;
         SnakeObjs = snakeObjs;
-        int numberOfCharWeNeed = map._Map.Count * map._Map.First().Count * 13 * 2;
-        var displayMap = new StringBuilder(numberOfCharWeNeed);
-        DisplayMapStr = displayMap;
+
     }
-    /// <summary>
-    ///  On Creation it will saved foregroundColor and backgroundColor of console
-    /// </summary>
-   
 
-    public string WallColorForegroundColor = "\u001b[38;5;231m";
-    public string WallColorBackgroundColor = "\u001b[48;5;231m";
+    public const string WallColorForegroundColor = "\u001b[38;5;231m";
+    public const string WallColorBackgroundColor = "\u001b[48;5;231m";
 
-    public string Snake1Color = "\u001b[38;5;28m\u001b[48;5;28m";
-    public string Snake2Color = "\u001b[38;5;21m";
+    public const string Snake1Color = "\u001b[38;5;28m\u001b[48;5;28m";
+    public const string Snake2Color = "\u001b[38;5;21m";
 
-    public string EmptyCellBackgroundColor = "\u001b[48;5;0m";
-    public string EmptyCellForegroundColor = "\u001b[38;5;0m";
+    public const string EmptyCellBackgroundColor = "\u001b[48;5;0m";
+    public const string EmptyCellForegroundColor = "\u001b[38;5;0m";
 
-    public string AppelColorForeGround = "\u001b[48;5;125m";
-    public string AppelColorBackGround = "\u001b[38;5;125m";
+    public const string AppelColorForeGround = "\u001b[48;5;125m";
+    public const string AppelColorBackGround = "\u001b[38;5;125m";
 
 
 
@@ -47,9 +42,11 @@ public class ConsolePrinter
     public void DrawWall()
     {
 
-        DisplayMapStr.Append(WallColorForegroundColor);
-        DisplayMapStr.Append(WallColorBackgroundColor);
-        DisplayMapStr.Append("W");
+        FinalStr2Print.Add(WallColorForegroundColor);
+        FinalStr2Print.Add(WallColorBackgroundColor);
+        FinalStr2Print.Add("W");
+        FinalStr2Print.Add("W");
+
 
     }
 
@@ -62,11 +59,13 @@ public class ConsolePrinter
         else
         if (cell.SnakesValues[0]._SnakeValue == 0)
         {
-            
-            DisplayMapStr.Append(EmptyCellBackgroundColor);
-            DisplayMapStr.Append(EmptyCellForegroundColor);
 
-            DisplayMapStr.Append("e");
+            FinalStr2Print.Add(EmptyCellBackgroundColor);
+            FinalStr2Print.Add(EmptyCellForegroundColor);
+
+            FinalStr2Print.Add("e");
+            FinalStr2Print.Add("e");
+
 
             return;
         }
@@ -74,10 +73,11 @@ public class ConsolePrinter
         else if (cell.SnakesValues[0]._SnakeValue > 0)
         {
 
-            DisplayMapStr.Append(Snake1Color);
-            DisplayMapStr.Append(Snake1Color);
+            FinalStr2Print.Add(Snake1Color);
+            FinalStr2Print.Add(Snake1Color);
 
-            DisplayMapStr.Append('1');
+            FinalStr2Print.Add("1");
+            FinalStr2Print.Add("1");
 
             return;
         }
@@ -85,10 +85,11 @@ public class ConsolePrinter
                  cell.SnakesValues[1]._SnakeValue > 1)
         {
 
-            DisplayMapStr.Append(Snake2Color);
-            DisplayMapStr.Append(Snake2Color);
+            FinalStr2Print.Add(Snake2Color);
+            FinalStr2Print.Add(Snake2Color);
 
-            DisplayMapStr.Append('2');
+            FinalStr2Print.Add("2");
+            FinalStr2Print.Add("2");
 
             return;
         }
@@ -100,32 +101,48 @@ public class ConsolePrinter
     public void DrawAppel()
     {
 
-        DisplayMapStr.Append(AppelColorBackGround);
-        DisplayMapStr.Append(AppelColorForeGround);
-        DisplayMapStr.Append("A");
+        FinalStr2Print.Add(AppelColorBackGround);
+        FinalStr2Print.Add(AppelColorForeGround);
+        FinalStr2Print.Add("A");
+        FinalStr2Print.Add("A");
+
 
     }
 
+    public void DrawEmptyCell(Cell cell)
+    {
+        FinalStr2Print.Add(EmptyCellBackgroundColor);
+        FinalStr2Print.Add(EmptyCellForegroundColor);
+        FinalStr2Print.Add("e");
+        FinalStr2Print.Add("e");
+
+    }
+
+
     public bool IsCellEmpty(Cell cell)
     {
-        if (cell.SnakesValues.Any(x => x._SnakeValue != 0) && cell.IsWall == false) 
+        if (cell.SnakesValues.Any(x => x._SnakeValue != 0) && cell.IsWall == false)
         {
             return false;
         }
         return true;
     }
-
-
-    public void DrawEmptyCell(Cell cell)
+    public void DrawGameLostScreen()
     {
-        DisplayMapStr.Append(EmptyCellBackgroundColor);
-        DisplayMapStr.Append(EmptyCellForegroundColor);
-        DisplayMapStr.Append("e");
+
     }
+
     public void Draw()
     {
-        DisplayMapStr.Clear();
+        //int lastLoopItemCount = FinalStr2Print.Capacity;
+        FinalStr2Print.Clear();
+
+
+        //if(lastLoopItemCount > 0) 
+        //    FinalStr2Print.EnsureCapacity(lastLoopItemCount);
+
         Console.Clear();
+
         foreach (var row in Map._Map)
         {
             foreach (Cell cell in row) // this will iterate over all cells in row
@@ -153,8 +170,9 @@ public class ConsolePrinter
                 }
 
             }
-            DisplayMapStr.Append("\n\u001b[38;5;0m\u001b[48;5;0m");
+            FinalStr2Print.Add(NewLine_BlackBackGround_BlackForegrand);
         }
-        Console.WriteLine(DisplayMapStr);
+        FinalStr2Print.Add(NewLine_BlackBackGround_BlackForegrand);
+        Console.WriteLine(string.Join(string.Empty, FinalStr2Print));
     }
 }

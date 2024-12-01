@@ -6,16 +6,12 @@ using System.Threading.Tasks;
 
 namespace Snake;
 
-public class ConsoleManger : ConsolePrinter
+public class ConsoleManger(GameMap map, List<SnakeObj> snakeObjs) : ConsolePrinter(map, snakeObjs)
 {
     public event EventHandler? On_KeyPress_W;
     public event EventHandler? On_KeyPress_S;
     public event EventHandler? On_KeyPress_A;
     public event EventHandler? On_KeyPress_D;
-
-    public ConsoleManger(GameMap map, List<SnakeObj> snakeObjs) : base(map, snakeObjs)
-    {
-    }
 
     public void HandelInput()
     {

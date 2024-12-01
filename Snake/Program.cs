@@ -5,12 +5,12 @@ using System.Net.NetworkInformation;
 
 public class SnakeGame
 {
-    public static void Main()
+    public static async Task Main()
     {
 
         SnakeObj snake1 = new SnakeObj(5, 5, SnakeObj.Directions.right);
 
-        List<SnakeObj> snakeObjs= new  List<SnakeObj> { snake1};
+        List<SnakeObj> snakeObjs = [snake1];
 
         var jsonStr = string.Join(' ', File.ReadAllLines(
             "C:\\Users\\sorou\\Source\\Repos\\Snake\\Snake\\GameMap.json"));
@@ -21,13 +21,13 @@ public class SnakeGame
 
         ConsoleManger consoleManger = new ConsoleManger(gameMap, snakeObjs);
 
-        GameEngine gameEngine = new(consoleManger,gameMap, snakeObjs);
-         gameEngine.MainGameLoop().Wait();
+        GameEngine gameEngine = new(consoleManger, gameMap, snakeObjs);
+        await gameEngine.MainGameLoop();
 
     }
 
 
-    
+
 }
 public struct MapSize
 {

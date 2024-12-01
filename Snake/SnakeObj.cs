@@ -8,6 +8,10 @@ namespace Snake;
 
 public class SnakeObj
 {
+
+    public int HeadX;
+    public int HeadY;
+    public Directions Direction { get; set; }
     public SnakeObj(int x, int y, Directions direction)
     {
         HeadX = x;
@@ -16,10 +20,6 @@ public class SnakeObj
     }
 
     public SnakeObj(int x, int y) : this(x, y, Directions.right) { }
-
-    public int HeadX;
-    public int HeadY;
-    public Directions Direction { get; set; }
 
     public enum Directions
     {
