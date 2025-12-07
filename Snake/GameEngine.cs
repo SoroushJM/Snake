@@ -1,23 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Snake;
+﻿namespace SnakeGame;
 
 public class GameEngine
 {
     GameMap _GameMap;
     List<List<Cell>> _Map;
     Task _ConsoleHandler;
-    List<SnakeObj> _SnakeObjs { get; set; }
+    List<Snake> _SnakeObjs { get; set; }
     ConsoleManger _consoleManger;
     GameState _gameState = new();
     DateTime lasTickTime = DateTime.Now;
     public int NumberOfAppelsInMap { get; set; }
 
-    public GameEngine(ConsoleManger consoleManger, GameMap gameMap, List<SnakeObj> snakeObjs)
+    public GameEngine(ConsoleManger consoleManger, GameMap gameMap, List<Snake> snakeObjs)
     {
         _consoleManger = consoleManger;
 
@@ -46,14 +40,14 @@ public class GameEngine
             UpdateSnakes();
 
             CheckGameState(_gameState);
-            if(_gameState._GameLost == true)
+            if (_gameState._GameLost == true)
 
-            _consoleManger.Draw();
+                _consoleManger.Draw();
 
             var howMuchPastFromLastTick = (lasTickTime - DateTime.Now).Seconds;
             if (1000 / 4 > howMuchPastFromLastTick)
             {
-                await Task.Delay(1000 / 4 - howMuchPastFromLastTick);
+                await Task.Delay((1000 / 4) - howMuchPastFromLastTick);
             }
             lasTickTime = DateTime.Now;
         }
@@ -61,27 +55,27 @@ public class GameEngine
 
     public void W_Key_Pressed(object? sender, EventArgs e)
     {
-        if (_SnakeObjs[0].Direction != SnakeObj.Directions.down)
-            _SnakeObjs[0].Direction = SnakeObj.Directions.up;
+        if (_SnakeObjs[0].Direction != Snake.Directions.down)
+            _SnakeObjs[0].Direction = Snake.Directions.up;
     }
     public void S_Key_Pressed(object? sender, EventArgs e)
     {
-        if (_SnakeObjs[0].Direction != SnakeObj.Directions.up)
-            _SnakeObjs[0].Direction = SnakeObj.Directions.down;
+        if (_SnakeObjs[0].Direction != Snake.Directions.up)
+            _SnakeObjs[0].Direction = Snake.Directions.down;
     }
     public void A_Key_Pressed(object? sender, EventArgs e)
     {
-        if (_SnakeObjs[0].Direction != SnakeObj.Directions.right)
-            _SnakeObjs[0].Direction = SnakeObj.Directions.left;
+        if (_SnakeObjs[0].Direction != Snake.Directions.right)
+            _SnakeObjs[0].Direction = Snake.Directions.left;
     }
     public void D_Key_Pressed(object? sender, EventArgs e)
     {
-        if (_SnakeObjs[0].Direction != SnakeObj.Directions.left)
-            _SnakeObjs[0].Direction = SnakeObj.Directions.right;
+        if (_SnakeObjs[0].Direction != Snake.Directions.left)
+            _SnakeObjs[0].Direction = Snake.Directions.right;
     }
 
 
-    public void MoveUpSnake(SnakeObj snakeObj)
+    public void MoveUpSnake(Snake snakeObj)
     {
         var x = snakeObj.HeadX;
         var y = snakeObj.HeadY;
@@ -94,7 +88,7 @@ public class GameEngine
         snakeObj.HeadY = y;
 
     }
-    public void MoveDownSnake(SnakeObj snakeObj)
+    public void MoveDownSnake(Snake snakeObj)
     {
         var x = snakeObj.HeadX;
         var y = snakeObj.HeadY;
@@ -106,7 +100,7 @@ public class GameEngine
         snakeObj.HeadX = x + 1;
         snakeObj.HeadY = y;
     }
-    public void MoveRightSnake(SnakeObj snakeObj)
+    public void MoveRightSnake(Snake snakeObj)
     {
         var x = snakeObj.HeadX;
         var y = snakeObj.HeadY;
@@ -117,7 +111,7 @@ public class GameEngine
         snakeObj.HeadX = x;
         snakeObj.HeadY = y + 1;
     }
-    public void MoveLeftSnake(SnakeObj snakeObj)
+    public void MoveLeftSnake(Snake snakeObj)
     {
         var x = snakeObj.HeadX;
         var y = snakeObj.HeadY;
@@ -132,26 +126,26 @@ public class GameEngine
 
     public void MoveSnakes()
     {
-        foreach (SnakeObj snakeObj in _SnakeObjs)
+        foreach (Snake snakeObj in _SnakeObjs)
         {
             switch (snakeObj.Direction)
             {
-                case SnakeObj.Directions.up:
+                case Snake.Directions.up:
                     MoveUpSnake(snakeObj);
                     break;
 
 
-                case SnakeObj.Directions.down:
+                case Snake.Directions.down:
                     MoveDownSnake(snakeObj);
                     break;
 
 
-                case SnakeObj.Directions.left:
+                case Snake.Directions.left:
                     MoveLeftSnake(snakeObj);
                     break;
 
 
-                case SnakeObj.Directions.right:
+                case Snake.Directions.right:
                     MoveRightSnake(snakeObj);
                     break;
 
@@ -162,7 +156,7 @@ public class GameEngine
         }
     }
 
-    
+
     /// <summary>
     /// decrease 1 number from body
     /// </summary>
@@ -172,7 +166,7 @@ public class GameEngine
         {
             foreach (var cell in row)
             {
-                foreach (var snakeValues in cell.SnakesValues)
+                foreach (var snakeValues in cell.SnakeBodyNumbers)
                 {
                     if (snakeValues._SnakeBodyValue > 0)
                         snakeValues._SnakeBodyValue--;
@@ -208,7 +202,7 @@ public class GameEngine
     /// <returns>returns true if snake exist in that cell</returns>
     public bool IsValidPlace4Appel(int x, int y)
     {
-        foreach (var snakeVal in _Map[x][y].SnakesValues)
+        foreach (var snakeVal in _Map[x][y].SnakeBodyNumbers)
         {
             if (snakeVal._SnakeBodyValue > 0)
             {
@@ -236,7 +230,7 @@ public class GameEngine
 
                 var cell = _Map[headX][headY];
 
-                SnakeBodyNumber x = cell.SnakesValues.Find(x => x._SnakeRef == snake)!;
+                SnakeBodyNumber x = cell.SnakeBodyNumbers.Find(x => x._SnakeRef == snake)!;
 
                 x._SnakeBodyValue++;
 
@@ -260,14 +254,14 @@ public class GameEngine
             foreach (Cell cell in row)
             {
                 if (cell.IsWall == true &&
-                    cell.SnakesValues.Any(snakeBodyNumber => snakeBodyNumber._SnakeBodyValue > 0))
+                    cell.SnakeBodyNumbers.Any(snakeBodyNumber => snakeBodyNumber._SnakeBodyValue > 0))
                 {
                     gameState._GameLost = true;
                     gameState.Reasons.Add(GameState.Reason.SnakeHitTheWall);
                 }
             }
         }
-        
+
     }
     public class GameState
     {
@@ -278,7 +272,7 @@ public class GameEngine
             _GameLost = false;
         }
 
-        public GameState(bool isGameLost,Reason reason = Reason.None)
+        public GameState(bool isGameLost, Reason reason = Reason.None)
         {
             _GameLost = isGameLost;
             if (reason != Reason.None)
@@ -287,7 +281,8 @@ public class GameEngine
             }
         }
 
-        public enum Reason{
+        public enum Reason
+        {
             None,
             SnakeHitTheWall
         }

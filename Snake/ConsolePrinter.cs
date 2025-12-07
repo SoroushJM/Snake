@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Snake;
+﻿namespace SnakeGame;
 
 /// <summary>
 /// can print multiple snake into console
@@ -12,11 +6,11 @@ namespace Snake;
 public class ConsolePrinter
 {
     GameMap Map;
-    List<SnakeObj> SnakeObjs;
+    List<Snake> SnakeObjs;
     List<string> FinalStr2Print = new();
     const string NewLine_BlackBackGround_BlackForegrand = "\n\u001b[38;5;0m\u001b[48;5;0m";
 
-    public ConsolePrinter(GameMap map, List<SnakeObj> snakeObjs)
+    public ConsolePrinter(GameMap map, List<Snake> snakeObjs)
     {
         Map = map;
         SnakeObjs = snakeObjs;
@@ -36,9 +30,6 @@ public class ConsolePrinter
     public const string AppelColorBackGround = "\u001b[38;5;125m";
 
 
-
-
-
     public void DrawWall()
     {
 
@@ -53,11 +44,11 @@ public class ConsolePrinter
     public void DrawSnakes(Cell cell)
     {
 
-        if (cell.SnakesValues.Count > 2)
+        if (cell.SnakeBodyNumbers.Count > 2)
+        {
             throw new NotImplementedException("for now the game only supports only 2 snakes");
-
-        else
-        if (cell.SnakesValues[0]._SnakeValue == 0)
+        }
+        else if (cell.SnakeBodyNumbers[0]._SnakeBodyValue == 0)
         {
 
             FinalStr2Print.Add(EmptyCellBackgroundColor);
@@ -69,8 +60,7 @@ public class ConsolePrinter
 
             return;
         }
-
-        else if (cell.SnakesValues[0]._SnakeValue > 0)
+        else if (cell.SnakeBodyNumbers[0]._SnakeBodyValue > 0)
         {
 
             FinalStr2Print.Add(Snake1Color);
@@ -81,8 +71,8 @@ public class ConsolePrinter
 
             return;
         }
-        else if (cell.SnakesValues.Count > 1 &&
-                 cell.SnakesValues[1]._SnakeValue > 1)
+        else if (cell.SnakeBodyNumbers.Count > 1 &&
+                 cell.SnakeBodyNumbers[1]._SnakeBodyValue > 1)
         {
 
             FinalStr2Print.Add(Snake2Color);
@@ -121,7 +111,7 @@ public class ConsolePrinter
 
     public bool IsCellEmpty(Cell cell)
     {
-        if (cell.SnakesValues.Any(x => x._SnakeValue != 0) && cell.IsWall == false)
+        if (cell.SnakeBodyNumbers.Any(x => x._SnakeBodyValue != 0) && cell.IsWall == false)
         {
             return false;
         }
@@ -155,7 +145,7 @@ public class ConsolePrinter
                 {
                     DrawAppel();
                 }
-                else if (cell.SnakesValues.Count > 0)
+                else if (cell.SnakeBodyNumbers.Count > 0)
                 {
                     DrawSnakes(cell);
                 }

@@ -1,40 +1,15 @@
-﻿using Snake;
+﻿namespace SnakeGame;
 
-using System;
-using System.Net.NetworkInformation;
-
-public class SnakeGame
+public class Application
 {
     public static async Task Main()
     {
+        var gameMap = MapMaker.CreateDefaultMap(10, 10);
 
-        SnakeObj snake1 = new SnakeObj(5, 5, SnakeObj.Directions.right);
+        ConsoleManger consoleManger = new(gameMap, gameMap.Snakes);
 
-        List<SnakeObj> snakeObjs = [snake1];
-
-        var jsonStr = string.Join(' ', File.ReadAllLines(
-            "C:\\Users\\sorou\\Source\\Repos\\Snake\\Snake\\GameMap.json"));
-
-        var cells = Newtonsoft.Json.JsonConvert.DeserializeObject<List<List<Cell>>>(jsonStr)!;
-
-        var gameMap = new GameMap(cells, snakeObjs);
-
-        ConsoleManger consoleManger = new ConsoleManger(gameMap, snakeObjs);
-
-        GameEngine gameEngine = new(consoleManger, gameMap, snakeObjs);
+        GameEngine gameEngine = new(consoleManger, gameMap, gameMap.Snakes);
         await gameEngine.MainGameLoop();
 
-    }
-
-
-
-}
-public struct MapSize
-{
-    public int coulmn = 10;
-    public int row = 10;
-
-    public MapSize()
-    {
     }
 }

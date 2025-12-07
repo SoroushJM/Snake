@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace SnakeGame;
 
-namespace Snake;
-
-public class ConsoleManger(GameMap map, List<SnakeObj> snakeObjs) : ConsolePrinter(map, snakeObjs)
+public class ConsoleManger(GameMap map, List<Snake> snakeObjs) : ConsolePrinter(map, snakeObjs)
 {
     public event EventHandler? On_KeyPress_W;
     public event EventHandler? On_KeyPress_S;
